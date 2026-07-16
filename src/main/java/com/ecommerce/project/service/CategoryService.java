@@ -6,7 +6,7 @@ import com.ecommerce.project.payload.response.CategoryResponse;
 import jakarta.validation.Valid;
 
 public interface CategoryService {
-    CategoryResponse getAllCategory(Integer pageNumber, Integer pageSize);
+    CategoryResponse getAllCategory(Integer pageNumber, Integer pageSize,String sortBy, String sortOrder);
     void createCategory(CreateCategoryDTO createCategoryDTO);
     CategoryDTO deleteCategory(Long categoryId);
     CategoryDTO updateCategory(@Valid CategoryDTO categoryDTO, Long categoryId);
